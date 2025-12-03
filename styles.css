@@ -1,0 +1,69 @@
+/* Reset default browser spacing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grid container for the images */
+.container{
+    display: grid;
+    /* Responsive grid: adjusts based on screen width */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px; /* Space between columns */
+    max-width: 1100px;
+    margin: 2rem auto; /* Center the layout */
+}
+
+/* Portrait image styling */
+.potrait{
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+/* Landscape image styling */
+.landscape{
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+/* Ensures all images scale properly inside their container */
+img{
+    width: 100%;
+}
+
+/* Media Queries for Responsive Margins */
+@media (max-width: 1044px) {
+    .container{
+        margin: 2rem 2rem;
+    }
+}
+
+@media (max-width: 1043px) {
+    .container{
+        margin: 2rem 2rem;
+    }
+}
+
+/* Adjust layout on medium-small screens */
+@media (max-width: 574px) {
+    .container{
+        margin: 2rem 6.5rem;
+    }
+}
+
+/* Adjust layout on smaller screens */
+@media (max-width: 462px) {
+    .container{
+        margin: 2rem 5rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 400px) {
+    .container{
+        margin: 2rem 2rem;
+    }
+}
